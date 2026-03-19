@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gürbüz Robotik</title>
+
+<style>
+:root {
+  --blue: #0A3D62;
+  --light-gray: #f5f7fa;
+  --dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NAVBAR */
+nav {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  background: var(--blue);
+  color: white;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: white;
+  color: var(--blue);
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: var(--blue);
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  padding: 25px;
+  background: white;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+}
+
+/* PRODUCT */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+  background: #ddd;
+  height: 250px;
+}
+
+.product-text {
+  flex: 1;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: var(--blue);
+  color: white;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .product {
+    flex-direction: column;
+  }
+
+  nav ul {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Gürbüz Robotik</div>
+    <ul>
+      <li><a href="#home">Ana Sayfa</a></li>
+      <li><a href="#products">Ürünler</a></li>
+      <li><a href="#about">Hakkımızda</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Endüstriyel Otomasyonda Güçlü Çözümler</h1>
+    <p>Gürbüz Robotik, üretim süreçlerinizi hızlandıran ve güvenilir otomasyon sistemleri sunar.</p>
+    <a href="#contact" class="btn">Bizimle İletişime Geçin</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <div class="container">
+    <div class="features">
+      <div class="feature-box">
+        <h3>Sağlam Tasarım</h3>
+        <p>Zorlu üretim ortamlarına uygun, dayanıklı makine tasarımı.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Güvenilir Performans</h3>
+        <p>Kesintisiz çalışma için optimize edilmiş sistemler.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Yerel Destek</h3>
+        <p>Hızlı servis ve teknik destek ile kesintisiz üretim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT HIGHLIGHT -->
+<section class="section" style="background: var(--light-gray);">
+  <div class="container product">
+    <img src="#" alt="Makine Görseli">
+    <div class="product-text">
+      <h2>Otomatik Etiketleme Makinesi</h2>
+      <p>Üretim hattınıza kolayca entegre edilen bu sistem, yüksek hızda ve hassas etiketleme sağlar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Neden Gürbüz Robotik?</h2>
+    <ul>
+      <li>Yerli üretim</li>
+      <li>Uygun maliyet</li>
+      <li>Kolay bakım</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRODUCTS PAGE -->
+<section class="section" id="products">
+  <div class="container">
+    <h2 class="section-title">Ürünler</h2>
+
+    <div class="product">
+      <img src="#" alt="Kutu Etiketleme">
+      <div class="product-text">
+        <h3>Otomatik Kutu Etiketleme Makinesi</h3>
+        <p>Yüksek hassasiyetle çalışan bu sistem, üretim hattınızda hızlı ve güvenilir etiketleme sağlar.</p>
+
+        <ul>
+          <li>Yüksek hassasiyet</li>
+          <li>Sürekli çalışma</li>
+          <li>Kolay entegrasyon</li>
+        </ul>
+
+        <table>
+          <tr><th>Özellik</th><th>Değer</th></tr>
+          <tr><td>Hız</td><td>XX ürün/dk</td></tr>
+          <tr><td>Güç</td><td>XX kW</td></tr>
+          <tr><td>Boyut</td><td>XX cm</td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" style="background: var(--light-gray);">
+  <div class="container">
+    <h2 class="section-title">Hakkımızda</h2>
+    <p>
+      Gürbüz Robotik, mühendislik odaklı yaklaşımıyla endüstriyel otomasyon sistemleri geliştiren bir firmadır.
+      Amacımız, üretim süreçlerini daha verimli, güvenilir ve sürdürülebilir hale getiren makineler üretmektir.
+    </p>
+    <br>
+    <p>
+      Sürekli iyileştirme (Kaizen) prensibi ile çalışır, her projede daha iyi çözümler üretmeyi hedefleriz.
+      Tasarladığımız her makine, uzun ömürlü kullanım ve kolay bakım esas alınarak geliştirilir.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title">İletişim</h2>
+
+    <form>
+      <input type="text" placeholder="Adınız">
+      <input type="text" placeholder="Firma Adı">
+      <input type="text" placeholder="Telefon">
+      <textarea placeholder="Mesajınız"></textarea>
+      <button>Gönder</button>
+    </form>
+
+    <br>
+    <p><strong>Telefon:</strong> +90 XXX XXX XX XX</p>
+    <p><strong>Email:</strong> info@gurbuzrobotik.com</p>
+    <p><strong>Konum:</strong> Yalova, Türkiye</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p><strong>Gürbüz Robotik</strong></p>
+    <p>Endüstriyel otomasyon ve makine çözümleri</p>
+    <p>info@gurbuzrobotik.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
